@@ -89,5 +89,18 @@ Boolean(2) converts 2 to boolean true, so they're equal
 === checks for equality without type conversions (so diff types will return false)
 
 
-6. Loops
+7. functions
+returns [2, 4, 6]
+we pass an array, and a function to modifyArray.
+modifyArray applies a function to each element in the given array, and stores it into a new
+array called newArr. It then returns newArr.
+Since we pass in doSomething, which multiplies an element by 2, and modifyArray applies this,
+we get a resulting array where every element is multiplied by 2.
 
+
+9. setInterval, setTimeout, clearTimeout
+output is:
+1
+4
+3
+2
