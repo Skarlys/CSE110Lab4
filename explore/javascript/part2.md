@@ -43,54 +43,73 @@ is normal.
 
 
 2. Data Types:
+
 A. student.name
+
 B. student['Grad Year']
+
 C. student.greeting()
+
 D. student['Favorite Teacher'].name
+
 E. student.courseLoad[0]
 
 
 3. Arithmetic
+
 A. = 32
 Concats 2 to '3' because '3' is a string and + is string concat
+
 B. = 1
 turns '3' into int and subtracts 2 because - is arithmetic operation
+
 C. = 3
 since 3 is int, treats null as 0
+
 D. = 3null
 since '3' is string, treats null as string 'null'
+
 E. = 4
 converts to int and treats true as int because + is arithmetic op (true = 1 like in C)
+
 F. = 0
 converts to int and treats false as 0 (like in C), and null as 0 since arithmetic op
+
 G. = 3undefined
 converts to string because '3' is string, and concats string 'undefined'
+
 H. = NaN
 converts '3' to string and undefined to a number. Tries to subtract, but results in not a number
 because undefined cannot be converted to a number
 
 
 4. Comparison
+
 A. true
 converted to int and checked, 2>1
+
 B. false
 string checked lexicographically, '2' < '1' returns false
+
 C. true
 checks equality with type conversion so 2 == 2
+
 D. false
 checks equality without type conversion, '2' and 2 have diff types
+
 E. false
 since true = 1, after type conversion, 1 != 2
+
 F. true
 Boolean(2) converts 2 to boolean true, so they're equal
 
 
-5. == checks for equality with type conversions
-=== checks for equality without type conversions (so diff types will return false)
+5. '==' checks for equality with type conversions,
+'===' checks for equality without type conversions (so diff types will return false)
 
 
-7. functions
-returns [2, 4, 6]
+7. function returns [2, 4, 6]
+
 we pass an array, and a function to modifyArray.
 modifyArray applies a function to each element in the given array, and stores it into a new
 array called newArr. It then returns newArr.
