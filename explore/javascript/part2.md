@@ -1,4 +1,4 @@
-1. A Little more of a Challenge..
+A Little more of a Challenge..
 
 1. prints "3" to console
 i is a var type that gets incremented in a for loop until it reaches prices.length.
